@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --theme_color:#e74c3c;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./images/download.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    align-items: baseline;
+}
+.btn-show{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: var(--theme_color);
+    columns: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btn-show .bar{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header .navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.header nav .logo{
+    text-transform: uppercase;
+    color: white;
+    justify-content: left;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.header nav .logo span{
+    font-weight: 800;
+    color: var(--theme_color);
+}
+.header .navbar ul li{
+    padding: 10px 25px;
+}
+
+
+.header .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.header .navbar ul li:hover a{
+    color: var(--theme_color);
+}
+
+.link-btn{
+    background-color: var(--theme_color);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header .navbar ul li.link-btn:hover{
+    background-color: white;
+    color: var(--theme_color);
+}
+
+.banner{
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    padding-left: 50px;
+    
+}
+.banner h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner h1 span{
+    font-weight: 800;
+    color: var(--theme_color);
+}
+
+.banner p{
+    margin: 30px 0px;
+    line-height: 30px;
+}
+
+.services{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 800px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.header .services .service{
+    padding: 20px;
+}
+
+.header .services .service h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.header .services .service p{
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.service a{
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.services .service:nth-child(1){
+    background-color: #26282c;
+}
+.services .service:nth-child(1) h3, .services .service:nth-child(1) a{
+    color: whitesmoke;
+}
+
+.services .service:nth-child(1) p{
+    color: rgba(255,255,255,0.6);
+}
+
+.services .service:nth-child(2){
+    background-color: #e2e3e6;
+}
+.services .service:nth-child(3){
+    background-color: #f1f1f1;
+}
+
+.project{
+    background-color: #f1f1f1;
+}
+.project .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.project .col{
+    width: 50vw;
+    height: 100vh;
+    padding: 100px;
+}
+
+.project .col h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0px;
+}
+
+.project .col p{
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgba(0,0,0,0.6);
+}
+
+.project .col-2{
+    position: relative;
+}
+
+.box-1{
+    position: absolute;
+    background-color: var(--theme_color);
+    width: 300px;
+    height: 250px;
+    top: 50px;
+    right: 90px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+
+.box-2{
+    position: absolute;
+    background-color: #f2dada;
+    width: 50%;
+    height: 300px;
+    bottom: 150px;
+    left: 0;
+}
+
+.img-box{
+    position: absolute;
+    background-image: url("./images/download1.jpg");    
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    left: 90px;
+    top: 100px;
+}
+
+.top{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    padding: 13px 5px;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+
+.top a{
+    padding: 20px 20px;
+    color: var(--theme_color);
+    text-decoration: none;
+}
+
+.trend{
+    background-color: var(--theme_color);
+    color: white;
+}
+
+.trend .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend .img-box1{
+    width: 650px;
+    height: 330px;
+}
+
+.trend img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trend p{
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+.trend h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding-top: 30px;
+}
+
+.feature .row{
+    width: 90%;
+    margin: auto;
+}
+
+.feature h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 10px;
+    padding-top: 100px;
+    color: #333;
+}
+
+.feature .row p{
+    margin: 30px 10px;
+    line-height: 30px;
+    color: #333;
+}
+
+.feature .row .boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    width: 300px;
+    gap: 20px;
+}
+
+.feature .row .box{
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+
+.feature .row .box img{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact .row{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.contact .col{
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact .col img{
+    position: relative;
+    top: 90px;
+    width: 100%;
+    box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+
+.contact h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+    color: var(--theme_color);
+    text-transform: uppercase;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    margin: 10px 0;
+    color: var(--theme_color);
+    font-weight: 500;
+}
+
+.form-group input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-group textarea{
+    margin-bottom: 10px;
+    height: 150px;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea{
+    border: 1px solid var(--theme_color);
+}
+
+.form-group button{
+    font-size: large;
+    align-self: flex-start;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--theme_color);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.form-group button:hover{
+    background-color: #cc4334;
+}
+
+.design{
+    position: relative;
+    top: 25px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--theme_color);
+    color: white;
+}
+.design a{
+    color: rgb(240, 228, 228);
+    text-decoration: none;
+    columns: var(--theme_color);
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+    .header{
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./images/b1\ \(1\).jpg");
+        background-size: cover;
+        position: relative;
+    }
+    .header nav .logo{
+        font-size: 18px;
+    }
+    .header .navbar{
+        display: none;
+        background-color: rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+    }
+    .header .navbar ul{
+        flex-direction: column;
+    }
+    .header .navbar ul li:hover{
+        background-color: rgba(255,255,255,0.2);
+    }
+    .
+
+    .banner{
+        width: 100%;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .banner .link-btn{
+        font-size: 14px;
+    }
+    .header .services{
+        width: 100%;
+        top: 25em;
+        grid-template-columns: 1fr;
+    }
+    .btn-show{
+        display: flex;
+    }
+  
+}
+
+.show{
+    display: block !important;
+}
